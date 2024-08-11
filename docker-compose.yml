@@ -26,6 +26,7 @@ services:
     ports:
       - "5044:5044"
       - "9600:9600"
+      - "5045:8080"
     volumes:
       - ./elk-config/logstash/logstash.conf:/usr/share/logstash/pipeline/logstash.conf
       - ./elk-config/logstash/logstash.yml:/usr/share/logstash/config/logstash.yml
